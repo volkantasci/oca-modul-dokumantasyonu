@@ -1,0 +1,78 @@
+site_name: OCA Modül Dokümantasyonu
+site_description: Odoo 19 Community için OCA muhasebe, banka ve doküman modülleri - detaylı teknik ve iş dokümantasyonu
+site_author: Netahavuz ERP Ekibi
+docs_dir: docs
+site_dir: site
+
+theme:
+  name: material
+  language: tr
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+    - toc.follow
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep purple
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Koyu moda geç
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Açık moda geç
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+  - attr_list
+  - toc:
+      permalink: true
+
+nav:
+  - Ana Sayfa: index.md
+  - Kurulum Rehberi: kurulum-rehberi.md
+  - Modül Matrisi: modul-matrisi.md
+  - "1. Finansal Raporlama":
+      - "Genel Finansal Raporlar (account_financial_report)": moduller/account_financial_report.md
+      - "Vergi Bakiyeleri (account_tax_balance)": moduller/account_tax_balance.md
+      - "Vade Listesi (account_due_list)": moduller/account_due_list.md
+      - "Cari Hesap Ekstresi (partner_statement)": moduller/partner_statement.md
+  - "2. Temel Yardımcılar":
+      - "Tekrarlayan Fiş Şablonları (account_move_template)": moduller/account_move_template.md
+      - "Fatura ve Belge Not Şablonları (account_comment_template)": moduller/account_comment_template.md
+      - "Karşılıklı Netleştirme (account_netting)": moduller/account_netting.md
+      - "Hizmet Dönemi Tarihleri (account_invoice_start_end_dates)": moduller/account_invoice_start_end_dates.md
+      - "Sabit Kıymet ve Amortisman (account_asset_management)": moduller/account_asset_management.md
+      - "Dönem/Yıl Kapanışı (account_fiscal_year_closing)": moduller/account_fiscal_year_closing.md
+  - "3. Banka ve Ödeme":
+      - "Ödeme Modları (account_payment_mode)": moduller/account_payment_mode.md
+      - "Uzlaştırma Ekranı (account_reconcile_oca)": moduller/account_reconcile_oca.md
+      - "Banka Ekstresi İçe Aktarma (account_statement_import)": moduller/account_statement_import.md
+      - "Ödeme Emirleri ve Toplu Ödeme (account_payment_order)": moduller/account_payment_order.md
+      - "Bankacılık Talimatları (account_banking_mandate)": moduller/account_banking_mandate.md
+      - "Geri Dönen Ödemeler (account_payment_return)": moduller/account_payment_return.md
+  - "4. Analitik, Bütçe ve Raporlama":
+      - "Analitik Dağıtım Kuralları (analytic stack)": moduller/analytic_stack.md
+      - "Bütçe Yönetimi (account_budget_oca)": moduller/account_budget_oca.md
+      - "MIS Rapor Tasarımcısı (mis_builder)": moduller/mis_builder.md
+  - "5. Faturalama Akışları":
+      - "Gelişmiş Ödeme Vadeleri (account_payment_term_extension)": moduller/account_payment_term_extension.md
+      - "İskonto Yönetimi (discounts)": moduller/discounts.md
+      - "Sevkiyattan Fatura (stock_picking_invoicing)": moduller/stock_picking_invoicing.md
+      - "Fatura Gruplama ve Otomatik Faturalama": moduller/invoicing_modes.md
+  - "6. Doküman Yönetimi":
+      - "Wiki ve İş Talimatları (document_page stack)": moduller/document_page_stack.md

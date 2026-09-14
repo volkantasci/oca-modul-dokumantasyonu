@@ -1,0 +1,21 @@
+# Python sanal ortamı
+.venv/
+venv/
+
+# MkDocs çıktı dizini
+site/
+
+# Python önbellekleri
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Ortam ve editör dosyaları
+.env
+.idea/
+.vscode/
+*.swp
+.DS_Store
+
+# Geçici günlükler
+*.log
