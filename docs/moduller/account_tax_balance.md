@@ -43,6 +43,7 @@ Seçilen **tarih aralığına göre vergi bakiyelerini** hesaplayan rapor modül
 - Bağımlılık `date_range` otomatik gelir; ek yapılandırma gerekmez
 - **Mature** olgunlukta, hafif ve riski düşük bir modüldür
 - Aynı depodaki `account_financial_report` içindeki KDV Raporu ile birlikte kullanılması önerilir
+- Dönem seçimi için bkz. [Tarih Aralıkları (date_range)](date_range.md)
 
 ## Kaynaklar
 

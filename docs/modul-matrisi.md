@@ -38,6 +38,7 @@ Kartlardaki modüllerin çalışması için ek olarak mount edilen OCA modüller
 | Modül | Sağlayıcı Repo | Hangi Kartlar İçin |
 |---|---|---|
 | `date_range` | OCA/server-ux | 1, 2, 19 |
+| `date_range_account` (auto_install) | OCA/server-ux | 1 (otomatik kuruldu) |
 | `report_xlsx` | OCA/reporting-engine | 1, 4, 19 |
 | `report_xlsx_helper` | OCA/reporting-engine | 4, 9 |
 | `base_comment_template` | OCA/reporting-engine | 6 |

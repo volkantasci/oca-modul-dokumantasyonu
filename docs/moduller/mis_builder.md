@@ -48,7 +48,7 @@
 
 ## Kurulum ve Yapılandırma
 
-- `report_xlsx` + `date_range` bağımlılıkları hazır mount edilmiştir
+- `report_xlsx` + `date_range` bağımlılıkları hazır mount edilmiştir (dönem yönetimi için bkz. [Tarih Aralıkları](date_range.md))
 - **Production** olgunluk — üretimde güvenle kullanılabilir
 - Rapor tasarımı iş birimiyle birlikte yapılmalı; hesap kodları ve analitik boyutlar planlanmalıdır
 - Analitik raporlama için id 55 (analitik kuralları) ile birlikte en güçlü etkiyi verir

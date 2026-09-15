@@ -54,6 +54,9 @@ Aşağıdaki raporları **PDF ve XLSX** formatında üretir:
 - Raporlara erişim için kullanıcıda **Faturalama: Sorumlu** veya **Tam Muhasebe Özellikleri** yetkisi gerekir
 - KDV raporu genel amaçlıdır; **resmî beyanname yerine geçmez**, beyanname öncesi hızlı mutabakat için kullanılır
 
+!!! tip "Birlikte gelen modül: Tarih Aralıkları"
+    Bu modülün bağımlılığı olan **`date_range`** ve otomatik kurulan **`date_range_account`** (raporlarda hazır dönem tanımları) için bkz. [Tarih Aralıkları (date_range)](date_range.md). Yaşlandırma aralıkları bu yapıdan bağımsızdır; raporlardaki *Tarih Aralığı* seçimi bu modülden gelir.
+
 ## Kaynaklar
 
 - [GitHub — account_financial_report (19.0)](https://github.com/OCA/account-financial-report/tree/19.0/account_financial_report)

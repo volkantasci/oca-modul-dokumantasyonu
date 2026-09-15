@@ -76,3 +76,5 @@ nav:
       - "Fatura Gruplama ve Otomatik Faturalama": moduller/invoicing_modes.md
   - "6. Doküman Yönetimi":
       - "Wiki ve İş Talimatları (document_page stack)": moduller/document_page_stack.md
+  - "Bağımlılık Modülleri":
+      - "Tarih Aralıkları (date_range + date_range_account)": moduller/date_range.md

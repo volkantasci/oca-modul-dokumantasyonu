@@ -59,3 +59,6 @@ Her modül sayfası şu bölümleri içerir:
 - **Nasıl Çalışır?** — süreç akışı
 - **Kurulum ve Yapılandırma** — ayarlar, dikkat edilecekler
 - **Kaynaklar** — GitHub, Runboat, hata takibi bağlantıları
+
+!!! note "Yaşayan dokümantasyon"
+    Bu dokümantasyon her modül kurulumu/aktivasyonu sonrasında sahadan gelen gerçek detaylarla zenginleştirilir: menü yerleri, otomatik kurulan bağımlılıklar, çeviri düzeltmeleri, yapılandırma adımları. Bağımlılık olarak gelen modüller (ör. `date_range`) "Bağımlılık Modülleri" bölümünde ayrıca belgelenir.
