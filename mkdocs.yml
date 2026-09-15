@@ -1,4 +1,5 @@
 site_name: OCA Modül Dokümantasyonu
+site_url: https://volkantasci.github.io/neta-module-docs/
 site_description: Odoo 19 Community için OCA muhasebe, banka ve doküman modülleri - detaylı teknik ve iş dokümantasyonu
 site_author: Netahavuz ERP Ekibi
 docs_dir: docs
