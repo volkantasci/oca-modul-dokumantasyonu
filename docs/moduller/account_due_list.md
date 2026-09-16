@@ -40,6 +40,18 @@ Vadesi gelen ve gelecek **açık alacak/borç kalemlerini tek listede** göstere
 
 **Menü yolu:** **Faturalama → Muhasebe → Ödemeler ve Vade listesi**
 
+**Nereye ne ekledi?** Modül mevcut ekranları (fatura, ortak, fiş) **değiştirmez** — hepsi tek bir yeni ekrandır:
+
+| Eklenen | Detay |
+|---|---|
+| Konum | `account.menu_finance_entries` (Faturalama → Muhasebe) altına yeni menü |
+| Model ve görünümler | `account.move.line` üzerinde **Liste + Form + Pivot + Grafik** |
+| Varsayılan kapsam (domain) | `account_id.reconcile = True` ve `balance != 0` → yalnızca uzlaştırılabilir hesapların sıfır olmayan bakiyeleri |
+| Açılış varsayılan filtreleri | Onaylanmış kayıtlar + Faturalardan + Tam uzlaşmamış |
+| Hazır filtreler | Onaylı/Onaysız, Alacak/Borç, Gelen/Giden, Uzlaşmamış/Kısmi/Tam, Vadesi geçmiş, tarih filtreleri |
+| Gruplamalar | Ortak, Hesap, Fatura, Vade Tarihi, Fatura Tarihi, Kayıt Tarihi, Satış Personeli |
+| Model alanları (yalnızca bu ekran için) | `invoice_origin` (Source Doc), `invoice_date` (Fatura Tarihi), `partner_ref` (Partner Ref), `payment_term_id` (Ödeme Koşulları), `invoice_user_id` (Fatura satış personeli) — hiçbiri mevcut ekranlara buton/alan olarak eklenmez |
+
 **Çeviri durumu:** Modülün `tr.po` dosyası kapsamlıdır (36 çeviri: menü, filtreler, sütun etiketleri → "Vade Tarihi", "Tam Uzlaştı", "Vadesi Geçmiş" vb.) ve dört view'ın tamamında tr_TR çevirisi yüklüdür. **Ek çeviri çalışması gerekmedi.**
 
 **Yetki notu (yaşanan sorun):** Kullanıcıda yalnızca *Muhasebe Yöneticisi* (`group_account_manager`) grubu varken "Muhasebe" bölümü görünmüyordu; çünkü bu grup Odoo 19'da `readonly` grubunu kapsamıyor. `group_account_user` verilerek çözüldü. Yeni muhasebe kullanıcılarında da bu grubun atanmasına dikkat edilmelidir.
