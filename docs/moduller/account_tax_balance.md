@@ -1,7 +1,7 @@
 # Vergi Bakiyeleri (`account_tax_balance`)
 
 !!! info "Kart Bilgisi"
-    **Kurulum Sırası:** 2/24 · **Proje Kartı:** id 36 · **Test Durumu:** ✅ PASS
+    **Kurulum Sırası:** 2/24 · **Proje Kartı:** id 36 · **Test Durumu:** ✅ PASS · **Aktivasyon:** ✅ 15.09.2026
 
 | Alan | Değer |
 |---|---|
@@ -37,6 +37,28 @@ Seçilen **tarih aralığına göre vergi bakiyelerini** hesaplayan rapor modül
 2. Şirket + tarih aralığı + hedef hareketler (taslak/kayıtlı) seçilir
 3. Rapor; **Matrah**, **Vergi**, **Net** ve **Bakiye** sütunlarını vergi kodu bazında listeler
 4. Satır açılarak ilgili vergi hareketleri görüntülenir
+
+## Saha Notları (Aktivasyon Sonrası)
+
+**Aktivasyon:** 15.09.2026'da canlıda aktive edildi (bağımlılığı `date_range` zaten kuruluydu).
+
+**Menü yolu:** **Muhasebe → Raporlama → Vergi Bakiyeleri**
+
+**Ekran akışı (doğrulanmış):**
+
+| Adım | Detay |
+|---|---|
+| Sihirbaz alanları | Şirketler, Tarih Aralığı, Başlangıç Tarihi, Bitiş Tarihi, Hedef Hareketler |
+| Tarih Aralığı | Bir [tarih aralığı](date_range.md) seçildiğinde başlangıç/bitiş tarihleri **otomatik dolar**; elle de değiştirilebilir |
+| Hedef Hareketler | *Tüm Onaylanmış Kayıtlar* (varsayılan) veya *Tüm Kayıtlar* |
+| Buton | **Vergileri Aç** ile sonuç listesi açılır |
+| Sonuç sütunları | Kısa Ad, Bakiye, Matrah Bakiyesi, İade Bakiyesi, İade Matrah Bakiyesi, Toplam Bakiye, Toplam Matrah Bakiyesi |
+| Detay | Her satırdaki büyüteç (fa-search-plus) butonu ile ilgili vergi hareketleri açılır |
+
+!!! note "Çeviri durumu (instance'a özel)"
+    Modül **hiç `tr.po` içermediği** için menü ve ekranlar İngilizce geliyordu. 15.09.2026'da şu çeviriler instance veritabanına eklendi: menü/aksiyon adları ("Vergi Bakiyeleri"), sihirbaz alanları (Şirketler, Tarih Aralığı, Başlangıç/Bitiş Tarihi, Hedef Hareketler), hedef hareket seçenekleri, sonuç sütunları, butonlar (Vergileri Aç, İptal), liste/matrah toplam etiketleri ve arama filtreleri (Vergi Grubu, Vergi Kapsamı).
+
+    Bu çeviriler **instance DB'sindedir** (modül dosyasında değil); upstream'e katkısı Weblate üzerinden yapılmalıdır — bu iş, proje kartı 57'deki Weblate görevi kapsamındadır.
 
 ## Kurulum ve Yapılandırma
 

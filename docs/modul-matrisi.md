@@ -59,6 +59,14 @@ Kartlardaki modüllerin çalışması için ek olarak mount edilen OCA modüller
 - Sonuçlar `~/.config/odoo-installer/tested.toml` whitelist'ine kaydedildi
 - Canlı veritabanına **hiçbir kurulum yapılmadı**; aktivasyon kullanıcı tarafından UI'dan yapılacaktır
 
+## Aktivasyon Durumu (Canlı)
+
+| Kart | Modül(ler) | Durum |
+|---|---|---|
+| 1 | account_financial_report (+ `date_range`, `date_range_account`) | ✅ Aktif — 15.09.2026 |
+| 2 | account_tax_balance | ✅ Aktif — 15.09.2026 (menü/ekran çevirileri eklendi) |
+| 3–24 | Diğer kartlar | ⏳ Sırada (modüller test edildi, UI aktivasyonu bekliyor) |
+
 ## Modül Sayfaları
 
 Kurulum sırasına göre gruplanmış detaylı dokümantasyon sol menüdedir. Her sayfa; modülün ne yaptığını, Odoo'da neleri değiştirdiğini, süreç akışını ve kurulum notlarını içerir.
