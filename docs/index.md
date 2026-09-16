@@ -15,6 +15,9 @@ Odoo 19 Community altyapımızda muhasebe, banka/ödeme, analitik-bütçe, fatur
 | Paket Yöneticisi | `oii` (odoo-installer 0.6.4) — `/home/odoo/deployments/.oii-venv` |
 | GitHub Kuruluşu | [OCA](https://github.com/OCA) |
 
+!!! note "Menü adları: Community'de \"Muhasebe\" uygulaması yok"
+    Odoo **Community**'de ayrı bir *Muhasebe* uygulaması bulunmaz (Enterprise'daki `account_accountant` modülüne özeldir); muhasebe menüleri **Faturalama** uygulaması altında toplanır. Modül sayfalarında upstream README'den gelen *"Muhasebe → Raporlama"* gibi ifadeler, bu instance'ta **"Faturalama → Raporlama"** yoluna karşılık gelir. İleri muhasebe menüleri için kullanıcıda *Tam Muhasebe Özellikleri* grubu gerekebilir. Her modül aktive edildikçe gerçek menü yolu sahada doğrulanıp ilgili sayfada netleştirilir.
+
 ## Neden OCA Modülleri?
 
 Odoo **Community** sürümü, Enterprise'da bulunan birçok finansal özelliği içermez:

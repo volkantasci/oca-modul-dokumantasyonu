@@ -26,14 +26,14 @@ Seçilen **tarih aralığına göre vergi bakiyelerini** hesaplayan rapor modül
 
 ## Odoo'da Neleri Değiştirir?
 
-- **Muhasebe → Raporlama → Vergi Bakiyeleri** menüsü ekler
+- **Faturalama → Raporlama → Vergi Bakiyeleri** menüsü ekler
 - Rapor ekranında şirket, tarih aralığı ve hareket türü seçilir; **"vergileri aç"** ile vergi satırlarının detayı incelenir
 - Vergi hesaplarının (ör. 191/391) ve vergi kodlarının listesinde **bakiyeye doğrudan atlama** aksiyonları ekler
 - Fatura/muhasebe hareketi ekranlarına ilgili vergi bakiyesine erişim bağlantıları ekler
 
 ## Nasıl Çalışır?
 
-1. *Muhasebe → Raporlama → Vergi Bakiyeleri* açılır
+1. *Faturalama → Raporlama → Vergi Bakiyeleri* açılır
 2. Şirket + tarih aralığı + hedef hareketler (taslak/kayıtlı) seçilir
 3. Rapor; **Matrah**, **Vergi**, **Net** ve **Bakiye** sütunlarını vergi kodu bazında listeler
 4. Satır açılarak ilgili vergi hareketleri görüntülenir
@@ -42,7 +42,7 @@ Seçilen **tarih aralığına göre vergi bakiyelerini** hesaplayan rapor modül
 
 **Aktivasyon:** 15.09.2026'da canlıda aktive edildi (bağımlılığı `date_range` zaten kuruluydu).
 
-**Menü yolu:** **Muhasebe → Raporlama → Vergi Bakiyeleri**
+**Menü yolu:** **Faturalama → Raporlama → Vergi Bakiyeleri**
 
 **Ekran akışı (doğrulanmış):**
 

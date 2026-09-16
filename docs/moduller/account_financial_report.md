@@ -32,7 +32,7 @@ Aşağıdaki raporları **PDF ve XLSX** formatında üretir:
 
 ## Odoo'da Neleri Değiştirir?
 
-- **Faturalama → Muhasebe → Raporlama** menüsüne yeni rapor ekranları ekler
+- **Faturalama → Raporlama** menüsüne yeni rapor ekranları ekler
 - Her rapor için **filtre sihirbazları** (tarih aralığı, dönem, ortak, hesap filtreleri) getirir
 - Rapor çıktılarında **XLSX dışa aktarma** seçeneği sağlar
 - `date_range` modülü sayesinde önceki dönemlerle çalışan **mali dönem seçici** entegre olur
@@ -40,7 +40,7 @@ Aşağıdaki raporları **PDF ve XLSX** formatında üretir:
 
 ## Nasıl Çalışır?
 
-1. Kullanıcı ilgili rapor menüsünü açar (ör. *Faturalama → Muhasebe → Raporlama → Genel Muhasebe Defteri*)
+1. Kullanıcı ilgili rapor menüsünü açar (ör. *Faturalama → Raporlama → OCA Muhasebe Raporları → Büyük Defter*)
 2. Sihirbazda tarih aralığı, mali dönem ve filtreler seçilir
 3. Rapor ekranda üretilir; mizan ve genel defterde **hesap detayına inilebilir**
 4. XLSX/PDF olarak indirilir veya yazdırılır
@@ -54,7 +54,7 @@ Aşağıdaki raporları **PDF ve XLSX** formatında üretir:
 
 **Otomatik gelenler:** Bağımlılıklar (`date_range`, `report_xlsx`) kuruldu; `date_range` + `account` mevcut olduğu için **`date_range_account`** (auto_install) kendiliğinden geldi — ayrıntılar: [Tarih Aralıkları](date_range.md).
 
-**Menü yolu:** **Muhasebe/Faturalama → Raporlama → OCA Muhasebe Raporları**
+**Menü yolu:** **Faturalama → Raporlama → OCA Muhasebe Raporları**
 
 | Alt Menü | Rapor |
 |---|---|
