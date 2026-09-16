@@ -30,7 +30,7 @@ Odoo **Community** sürümü, Enterprise'da bulunan birçok finansal özelliği 
 
 OCA, bu boşlukları topluluk tarafından geliştirilen ve bakımı yapılan **AGPL-3 lisanslı** modüllerle doldurur. Modüllerin tamamı OCA'nın kalite süreçlerinden (review, test, CI) geçer.
 
-## Yetki Grupları Hızlı Referans
+## Yetki Grupları Hızlı Referans {: #yetki-gruplari }
 
 | Grup (teknik ad) | Türkçe Adı | Kapsam |
 |---|---|---|

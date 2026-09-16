@@ -85,7 +85,7 @@ Aşağıdaki raporları **PDF ve XLSX** formatında üretir:
 | `account.group_account_user` | Bütün Muhasebe Hesaplarını Göster | Yaşlandırma yapılandırması gibi ileri ayarlar ve eksiksiz erişim |
 
 !!! tip "Grup atama"
-    Gruplar **Ayarlar → Kullanıcılar → (kullanıcı) → Yetkiler** bölümünden atanır. Muhasebe grubu hiyerarşisi için [Ana Sayfa → Yetki Grupları Hızlı Referans](../index.md#yetki-gruplari-hizli-referans) bölümüne bakın.
+    Gruplar **Ayarlar → Kullanıcılar → (kullanıcı) → Yetkiler** bölümünden atanır. Muhasebe grubu hiyerarşisi için [Ana Sayfa → Yetki Grupları Hızlı Referans](../index.md#yetki-gruplari) bölümüne bakın.
 
 ## Kaynaklar
 

@@ -65,7 +65,7 @@ Analitik (maliyet merkezi) dağıtımını tüm süreçlerde **tutarlı ve zorun
 | `account.group_account_invoice` / `account.group_account_readonly` | Faturalama / Salt Okunur | Fatura, fiş ve stok maliyet satırlarında dağıtım kullanımı |
 
 !!! tip "Grup atama"
-    Gruplar **Ayarlar → Kullanıcılar → (kullanıcı) → Yetkiler** bölümünden atanır. Muhasebe grubu hiyerarşisi için [Ana Sayfa → Yetki Grupları Hızlı Referans](../index.md#yetki-gruplari-hizli-referans) bölümüne bakın.
+    Gruplar **Ayarlar → Kullanıcılar → (kullanıcı) → Yetkiler** bölümünden atanır. Muhasebe grubu hiyerarşisi için [Ana Sayfa → Yetki Grupları Hızlı Referans](../index.md#yetki-gruplari) bölümüne bakın.
 
 ## Kaynaklar
 

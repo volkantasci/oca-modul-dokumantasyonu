@@ -66,7 +66,7 @@ Vadesi gelen ve gelecek **açık alacak/borç kalemlerini tek listede** göstere
 | `account.group_account_user` | Bütün Muhasebe Hesaplarını Göster | Önerilen; Salt Okunur'u da kapsar, eksiksiz erişim sağlar |
 
 !!! tip "Grup atama"
-    Gruplar **Ayarlar → Kullanıcılar → (kullanıcı) → Yetkiler** bölümünden atanır. Muhasebe grubu hiyerarşisi için [Ana Sayfa → Yetki Grupları Hızlı Referans](../index.md#yetki-gruplari-hizli-referans) bölümüne bakın.
+    Gruplar **Ayarlar → Kullanıcılar → (kullanıcı) → Yetkiler** bölümünden atanır. Muhasebe grubu hiyerarşisi için [Ana Sayfa → Yetki Grupları Hızlı Referans](../index.md#yetki-gruplari) bölümüne bakın.
 
 ## Kaynaklar
 

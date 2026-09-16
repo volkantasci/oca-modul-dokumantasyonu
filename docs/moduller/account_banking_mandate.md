@@ -56,7 +56,7 @@ Müşteri ve tedarikçiler için **bankacılık talimatı (mandate)** kayıtlar�
 | `account.group_account_readonly` | Muhasebe Özelliklerini Göster - Salt Okunur | Ortak/fatura ekranlarındaki mandat alanları |
 
 !!! tip "Grup atama"
-    Gruplar **Ayarlar → Kullanıcılar → (kullanıcı) → Yetkiler** bölümünden atanır. Muhasebe grubu hiyerarşisi için [Ana Sayfa → Yetki Grupları Hızlı Referans](../index.md#yetki-gruplari-hizli-referans) bölümüne bakın.
+    Gruplar **Ayarlar → Kullanıcılar → (kullanıcı) → Yetkiler** bölümünden atanır. Muhasebe grubu hiyerarşisi için [Ana Sayfa → Yetki Grupları Hızlı Referans](../index.md#yetki-gruplari) bölümüne bakın.
 
 ## Kaynaklar
 

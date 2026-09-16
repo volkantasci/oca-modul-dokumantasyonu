@@ -58,7 +58,7 @@ Odoo **Community'de bulunmayan** gelişmiş **uzlaştırma (reconciliation) ekra
 | `analytic.group_analytic_accounting` | Analitik Muhasebe | Analitik dağıtım alanları görünürse |
 
 !!! tip "Grup atama"
-    Gruplar **Ayarlar → Kullanıcılar → (kullanıcı) → Yetkiler** bölümünden atanır. Muhasebe grubu hiyerarşisi için [Ana Sayfa → Yetki Grupları Hızlı Referans](../index.md#yetki-gruplari-hizli-referans) bölümüne bakın.
+    Gruplar **Ayarlar → Kullanıcılar → (kullanıcı) → Yetkiler** bölümünden atanır. Muhasebe grubu hiyerarşisi için [Ana Sayfa → Yetki Grupları Hızlı Referans](../index.md#yetki-gruplari) bölümüne bakın.
 
 ## Kaynaklar
 
