@@ -1,7 +1,7 @@
 # Genel Finansal Raporlar (`account_financial_report`)
 
 !!! info "Kart Bilgisi"
-    **Kurulum Sırası:** 1/24 · **Proje Kartı:** id 34 · **Test Durumu:** ✅ PASS
+    **Kurulum Sırası:** 1/24 · **Proje Kartı:** id 34 · **Test Durumu:** ✅ PASS · **Aktivasyon:** ✅ 15.09.2026
 
 | Alan | Değer |
 |---|---|
@@ -47,6 +47,25 @@ Aşağıdaki raporları **PDF ve XLSX** formatında üretir:
 
 !!! tip "Yaşlandırma aralıkları"
     Varsayılan 30/60/90 gün yerine dinamik aralıklar tanımlanabilir: Örnek `15 → 30 → 60` yapılandırması ilk aralığı 0-15, ikinciyi 16-30, üçüncüyü 61+ yapar.
+
+## Saha Notları (Aktivasyon Sonrası)
+
+**Aktivasyon:** 15.09.2026'da canlıda aktive edildi.
+
+**Otomatik gelenler:** Bağımlılıklar (`date_range`, `report_xlsx`) kuruldu; `date_range` + `account` mevcut olduğu için **`date_range_account`** (auto_install) kendiliğinden geldi — ayrıntılar: [Tarih Aralıkları](date_range.md).
+
+**Menü yolu:** **Muhasebe/Faturalama → Raporlama → OCA Muhasebe Raporları**
+
+| Alt Menü | Rapor |
+|---|---|
+| Büyük Defter | General Ledger |
+| Yevmiye Defteri | Journal Ledger |
+| Geçici Mizan | Trial Balance |
+| Açık Pozisyonlar | Open Items |
+| Yaşlandırılmış İş Ortağı Bakiyesi | Aged Partner Balance |
+| KDV Raporu | VAT Report |
+
+**Çeviri notu:** Modülün kendi `tr.po` dosyası vardır ve menüler Türkçe gelir. Aktivasyon sırasında iki upstream bozulma tespit edilip düzeltildi: (1) `date_range_account` menülerindeki `Tarih Aral??klar??` bozulması, (2) bu modülün KDV Raporu sihirbazındaki `KDV Raporu Se??enekleri` dizgisi. Kalıcı düzeltme için upstream PR'lar açıldı: [OCA/server-ux#1333](https://github.com/OCA/server-ux/pull/1333) ve [OCA/account-financial-reporting#1573](https://github.com/OCA/account-financial-reporting/pull/1573) (proje kartı 57).
 
 ## Kurulum ve Yapılandırma
 

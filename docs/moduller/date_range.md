@@ -1,7 +1,7 @@
 # Tarih Aralıkları (`date_range` + `date_range_account`) — Bağımlılık Modülü
 
 !!! info "Kart Bilgisi"
-    **İlişkili Kart:** 1 (Genel Finansal Raporlar) bağımlılığı ile geldi · `date_range_account` otomatik kuruldu · **Test Durumu:** ✅ PASS (`date_range`, scratch DB)
+    **İlişkili Kart:** 1 (Genel Finansal Raporlar) bağımlılığı ile geldi · `date_range_account` otomatik kuruldu · **Test Durumu:** ✅ PASS · **Aktivasyon:** ✅ 15.09.2026 (`date_range`, scratch DB)
 
 | Alan | Değer |
 |---|---|
