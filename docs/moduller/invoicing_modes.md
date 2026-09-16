@@ -65,6 +65,17 @@
 - Otomatik faturalama, fatura kesme yetkisine sahip sistem kullanıcısıyla çalışır; muhasebe kontrol süreci planlanmalıdır
 - **grouping_criteria Production**, **partner_invoicing_mode Beta** olgunlukta
 
+## Gerekli Yetki Grupları
+
+| Grup (teknik ad) | Türkçe Adı | Neden Gerekli |
+|---|---|---|
+| `account.group_account_manager` | Yönetici | Gruplama ölçütleri ve faturalama modu yapılandırması (Faturalama → Yapılandırma) |
+| `account.group_account_invoice` | Faturalama | Faturalama akışının kullanımı |
+| `sale.group_sale_salesman` | Satış: Satış Temsilcisi | Satış siparişindeki "One Invoice Per Order" ve ilgili alanlar |
+
+!!! tip "Grup atama"
+    Gruplar **Ayarlar → Kullanıcılar → (kullanıcı) → Yetkiler** bölümünden atanır. Muhasebe grubu hiyerarşisi için [Ana Sayfa → Yetki Grupları Hızlı Referans](../index.md#yetki-gruplari-hizli-referans) bölümüne bakın.
+
 ## Kaynaklar
 
 - [GitHub — sale_order_invoicing_grouping_criteria (19.0)](https://github.com/OCA/account-invoicing/tree/19.0/sale_order_invoicing_grouping_criteria)

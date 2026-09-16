@@ -51,6 +51,17 @@ Yinelenen muhasebe fişlerini (günlük kayıtları) **şablon olarak tanımlay�
 - Şablonlarda **analitik dağıtım** da tanımlanabilir (analitik modülleriyle uyumlu)
 - **Beta** olgunluk — basit ve düşük riskli; test instance'ında bir şablonla doğrulama yeterli
 
+## Gerekli Yetki Grupları
+
+| Grup (teknik ad) | Türkçe Adı | Neden Gerekli |
+|---|---|---|
+| `account.group_account_user` | Bütün Muhasebe Hesaplarını Göster | Şablon tanımlama ön koşulu (upstream README açıkça ister) |
+| `account.group_account_manager` | Yönetici | Faturalama Sorumlusu yetkisi; Yapılandırma → Muhasebe → Fiş Şablonları |
+| `account.group_account_readonly` | Muhasebe Özelliklerini Göster - Salt Okunur | "Şablondan Fiş Oluştur" aksiyonu Muhasebe bölümündedir |
+
+!!! tip "Grup atama"
+    Gruplar **Ayarlar → Kullanıcılar → (kullanıcı) → Yetkiler** bölümünden atanır. Muhasebe grubu hiyerarşisi için [Ana Sayfa → Yetki Grupları Hızlı Referans](../index.md#yetki-gruplari-hizli-referans) bölümüne bakın.
+
 ## Kaynaklar
 
 - [GitHub — account_move_template (19.0)](https://github.com/OCA/account-financial-tools/tree/19.0/account_move_template)

@@ -67,6 +67,16 @@ Seçilen **tarih aralığına göre vergi bakiyelerini** hesaplayan rapor modül
 - Aynı depodaki `account_financial_report` içindeki KDV Raporu ile birlikte kullanılması önerilir
 - Dönem seçimi için bkz. [Tarih Aralıkları (date_range)](date_range.md)
 
+## Gerekli Yetki Grupları
+
+| Grup (teknik ad) | Türkçe Adı | Neden Gerekli |
+|---|---|---|
+| `account.group_account_user` | Bütün Muhasebe Hesaplarını Göster | Menü bu grupla kısıtlıdır (canlıda doğrulandı) |
+| `account.group_account_manager` | Yönetici | Menüyü açan alternatif grup |
+
+!!! tip "Grup atama"
+    Gruplar **Ayarlar → Kullanıcılar → (kullanıcı) → Yetkiler** bölümünden atanır. Muhasebe grubu hiyerarşisi için [Ana Sayfa → Yetki Grupları Hızlı Referans](../index.md#yetki-gruplari-hizli-referans) bölümüne bakın.
+
 ## Kaynaklar
 
 - [GitHub — account_tax_balance (19.0)](https://github.com/OCA/account-financial-report/tree/19.0/account_tax_balance)

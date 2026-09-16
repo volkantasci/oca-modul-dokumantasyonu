@@ -45,6 +45,16 @@ Bir şirketin hem müşteri hem tedarikçi olduğu durumlarda (ilişkili şirket
 - Netleştirme fişinin muhasebeleştiği günlük sihirbazda seçilir; şirket politikasına uygun günlük (ör. mahsup/yevmiye) tercih edilmelidir
 - **Beta** olgunluk; basit ve tek fonksiyonlu — düşük risk
 
+## Gerekli Yetki Grupları
+
+| Grup (teknik ad) | Türkçe Adı | Neden Gerekli |
+|---|---|---|
+| `account.group_account_readonly` | Muhasebe Özelliklerini Göster - Salt Okunur | Fiş Kayıtları → Günlük Kalemleri ve "Compensate" komutu (Muhasebe bölümü) |
+| `account.group_account_user` | Bütün Muhasebe Hesaplarını Göster | Netleştirme fişi oluşturma için önerilir |
+
+!!! tip "Grup atama"
+    Gruplar **Ayarlar → Kullanıcılar → (kullanıcı) → Yetkiler** bölümünden atanır. Muhasebe grubu hiyerarşisi için [Ana Sayfa → Yetki Grupları Hızlı Referans](../index.md#yetki-gruplari-hizli-referans) bölümüne bakın.
+
 ## Kaynaklar
 
 - [GitHub — account_netting (19.0)](https://github.com/OCA/account-financial-tools/tree/19.0/account_netting)

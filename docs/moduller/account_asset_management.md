@@ -57,6 +57,17 @@ Community sürümde bulunmayan **sabit kıymet (demirbaş) ve amortisman yöneti
 - Otomatik amortisman fişlerinin oluşma zamanı (cron) ve günlüğü muhasebe politikasına göre ayarlanmalı
 - **Mature** olgunlukta; yine de ilk kullanım öncesi test instance'ında bir kıymetle uçtan uca deneme önerilir
 
+## Gerekli Yetki Grupları
+
+| Grup (teknik ad) | Türkçe Adı | Neden Gerekli |
+|---|---|---|
+| `account.group_account_readonly` | Muhasebe Özelliklerini Göster - Salt Okunur | Faturalama → Sabit Kıymetler menüleri |
+| `account.group_account_manager` | Yönetici | Kıymet profilleri, grupları ve yapılandırma |
+| `account.group_account_invoice` | Faturalama | Fatura üzerinden kıymet oluşturma |
+
+!!! tip "Grup atama"
+    Gruplar **Ayarlar → Kullanıcılar → (kullanıcı) → Yetkiler** bölümünden atanır. Muhasebe grubu hiyerarşisi için [Ana Sayfa → Yetki Grupları Hızlı Referans](../index.md#yetki-gruplari-hizli-referans) bölümüne bakın.
+
 ## Kaynaklar
 
 - [GitHub — account_asset_management (19.0)](https://github.com/OCA/account-financial-tools/tree/19.0/account_asset_management)

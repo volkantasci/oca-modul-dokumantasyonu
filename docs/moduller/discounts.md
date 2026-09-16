@@ -64,6 +64,17 @@
 - İskonto tanımları için kullanıcıya **Manage Global Discounts** yetkisi verilmelidir
 - Fiyatlandırma politikası (iskontonun liste fiyatına mı net fiyata mı uygulandığı) muhasebe/satış ile netleştirilmelidir
 
+## Gerekli Yetki Grupları
+
+| Grup (teknik ad) | Türkçe Adı | Neden Gerekli |
+|---|---|---|
+| `base_global_discount.group_global_discount` | Manage Global Discounts (Genel İskontoları Yönet) | Genel iskonto tanımlama ve ortak/faturaya atama |
+| `analytic.group_analytic_accounting` | Analitik Muhasebe | Genel iskonto dağıtım alanları |
+| `account.group_account_invoice` | Faturalama | İskontolu fatura oluşturma |
+
+!!! tip "Grup atama"
+    Gruplar **Ayarlar → Kullanıcılar → (kullanıcı) → Yetkiler** bölümünden atanır. Muhasebe grubu hiyerarşisi için [Ana Sayfa → Yetki Grupları Hızlı Referans](../index.md#yetki-gruplari-hizli-referans) bölümüne bakın.
+
 ## Kaynaklar
 
 - [GitHub — account_global_discount (19.0)](https://github.com/OCA/account-invoicing/tree/19.0/account_global_discount)

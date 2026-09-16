@@ -53,6 +53,16 @@ Türkiye pratiğinde yaygın olan vade koşullarını Odoo'da tanımlanabilir ha
 - **Beta** olgunlukta ama uzun yıllardır yaygın kullanılan bir modüldür
 - Vade davranışı faturalama akışını etkilediği için **test instance'ında senaryo testi** yapılmalıdır (ör. ayın 31'i, şubat ayı, ay sonu + 15 gün)
 
+## Gerekli Yetki Grupları
+
+| Grup (teknik ad) | Türkçe Adı | Neden Gerekli |
+|---|---|---|
+| `account.group_account_manager` | Yönetici | Vade tanımları (Faturalama → Yapılandırma → Ödeme Vadeleri) |
+| `account.group_account_invoice` | Faturalama | Faturalarda gelişmiş vade kullanımı |
+
+!!! tip "Grup atama"
+    Gruplar **Ayarlar → Kullanıcılar → (kullanıcı) → Yetkiler** bölümünden atanır. Muhasebe grubu hiyerarşisi için [Ana Sayfa → Yetki Grupları Hızlı Referans](../index.md#yetki-gruplari-hizli-referans) bölümüne bakın.
+
 ## Kaynaklar
 
 - [GitHub — account_payment_term_extension (19.0)](https://github.com/OCA/account-payment/tree/19.0/account_payment_term_extension)

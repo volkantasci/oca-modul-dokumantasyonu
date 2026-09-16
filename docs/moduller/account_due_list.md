@@ -58,6 +58,16 @@ Vadesi gelen ve gelecek **açık alacak/borç kalemlerini tek listede** göstere
 - Şirket bazlı çoklu para birimi tutarlarını destekler
 - Aynı depodaki `account_due_list_payment_mode` modülü ile ödeme modu bazlı kırılım eklenebilir (opsiyonel)
 
+## Gerekli Yetki Grupları
+
+| Grup (teknik ad) | Türkçe Adı | Neden Gerekli |
+|---|---|---|
+| `account.group_account_readonly` | Muhasebe Özelliklerini Göster - Salt Okunur | Faturalama → **Muhasebe** bölümü ve vade listesi menüsü (canlıda doğrulandı) |
+| `account.group_account_user` | Bütün Muhasebe Hesaplarını Göster | Önerilen; Salt Okunur'u da kapsar, eksiksiz erişim sağlar |
+
+!!! tip "Grup atama"
+    Gruplar **Ayarlar → Kullanıcılar → (kullanıcı) → Yetkiler** bölümünden atanır. Muhasebe grubu hiyerarşisi için [Ana Sayfa → Yetki Grupları Hızlı Referans](../index.md#yetki-gruplari-hizli-referans) bölümüne bakın.
+
 ## Kaynaklar
 
 - [GitHub — account_due_list (19.0)](https://github.com/OCA/account-payment/tree/19.0/account_due_list)

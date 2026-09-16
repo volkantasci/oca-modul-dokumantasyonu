@@ -52,6 +52,17 @@ Standart Community bütçe modülünün (**`account_budget`**) OCA tarafından g
 - **Beta** olgunluk; bütçe/gerçekleşme sorguları test instance'ında kontrol edilmelidir
 - Lisansı LGPL-3'tür (diğer kart modüllerinin tamamı AGPL-3)
 
+## Gerekli Yetki Grupları
+
+| Grup (teknik ad) | Türkçe Adı | Neden Gerekli |
+|---|---|---|
+| `account.group_account_user` | Bütün Muhasebe Hesaplarını Göster | Bütçeler menüleri (kaynakta bu grupla kısıtlı) |
+| `analytic.group_analytic_accounting` | Analitik Muhasebe | Bütçe satırları analitik hesap bazlıdır |
+| `base.group_no_one` | Teknik Özellikleri | Teknik/gelişmiş görünümler |
+
+!!! tip "Grup atama"
+    Gruplar **Ayarlar → Kullanıcılar → (kullanıcı) → Yetkiler** bölümünden atanır. Muhasebe grubu hiyerarşisi için [Ana Sayfa → Yetki Grupları Hızlı Referans](../index.md#yetki-gruplari-hizli-referans) bölümüne bakın.
+
 ## Kaynaklar
 
 - [GitHub — account_budget_oca (19.0)](https://github.com/OCA/account-budgeting/tree/19.0/account_budget_oca)

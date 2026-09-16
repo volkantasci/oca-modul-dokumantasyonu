@@ -72,6 +72,17 @@ Dönem kaydı (`date.range`) alanları: `name`, `type_id`, `date_start`, `date_e
     find . -path "*/i18n/tr*.po" -exec grep -l '??' {} +
     ```
 
+## Gerekli Yetki Grupları
+
+| Grup (teknik ad) | Türkçe Adı | Neden Gerekli |
+|---|---|---|
+| `base.group_no_one` | Teknik Özellikleri | Ayarlar → Teknik → Tarih Aralıkları menüleri |
+| `account.group_account_manager` | Yönetici | Faturalama → Yapılandırma → Tarih Aralıkları menüleri |
+| (rapor yetkisi) | Muhasebe grupları | Raporlardaki tarih aralığı seçimi, raporun kendi yetkisiyle çalışır |
+
+!!! tip "Grup atama"
+    Gruplar **Ayarlar → Kullanıcılar → (kullanıcı) → Yetkiler** bölümünden atanır. Muhasebe grubu hiyerarşisi için [Ana Sayfa → Yetki Grupları Hızlı Referans](../index.md#yetki-gruplari-hizli-referans) bölümüne bakın.
+
 ## Kaynaklar
 
 - [GitHub — date_range (19.0)](https://github.com/OCA/server-ux/tree/19.0/date_range)

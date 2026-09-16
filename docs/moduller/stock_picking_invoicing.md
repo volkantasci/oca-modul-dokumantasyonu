@@ -46,6 +46,17 @@ Satış siparişi yerine **sevkiyat (picking) bazlı faturalama** sağlar: tesli
 - **Beta** olgunluk; teslim-iptal-iyi iade senaryoları test instance'ında denenmelidir
 - Faturalama politikası (sipariş bazlı mı sevkiyat bazlı mı) satış süreciyle birlikte netleştirilmelidir
 
+## Gerekli Yetki Grupları
+
+| Grup (teknik ad) | Türkçe Adı | Neden Gerekli |
+|---|---|---|
+| `account.group_account_invoice` | Faturalama | Sevkiyattan fatura aksiyonları (kaynakta 12 referans) |
+| `stock.group_stock_user` | Kullanıcı (Stok) | Sevkiyat kayıtlarına erişim |
+| `base.group_no_one` | Teknik Özellikleri | Teknik görünümler (opsiyonel) |
+
+!!! tip "Grup atama"
+    Gruplar **Ayarlar → Kullanıcılar → (kullanıcı) → Yetkiler** bölümünden atanır. Muhasebe grubu hiyerarşisi için [Ana Sayfa → Yetki Grupları Hızlı Referans](../index.md#yetki-gruplari-hizli-referans) bölümüne bakın.
+
 ## Kaynaklar
 
 - [GitHub — stock_picking_invoicing (19.0)](https://github.com/OCA/account-invoicing/tree/19.0/stock_picking_invoicing)

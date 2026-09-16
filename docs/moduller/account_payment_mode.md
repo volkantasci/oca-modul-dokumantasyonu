@@ -50,6 +50,17 @@
 - Ödeme modları şirket bazındadır; çok şirketli yapıda her şirkete uygun banka günlükleri tanımlanmalıdır
 - **Mature** olgunluk — güvenle kullanılabilir
 
+## Gerekli Yetki Grupları
+
+| Grup (teknik ad) | Türkçe Adı | Neden Gerekli |
+|---|---|---|
+| `account.group_account_manager` | Yönetici | Ödeme modları yapılandırması (Faturalama → Yapılandırma → Yönetim) |
+| `account.group_account_invoice` | Faturalama | Fatura ve siparişlerde ödeme modu kullanımı |
+| `base.group_multi_company` | Çoklu Şirket | Çok şirketli yapıda şirket alanları |
+
+!!! tip "Grup atama"
+    Gruplar **Ayarlar → Kullanıcılar → (kullanıcı) → Yetkiler** bölümünden atanır. Muhasebe grubu hiyerarşisi için [Ana Sayfa → Yetki Grupları Hızlı Referans](../index.md#yetki-gruplari-hizli-referans) bölümüne bakın.
+
 ## Kaynaklar
 
 - [GitHub — account_payment_mode (19.0)](https://github.com/OCA/bank-payment/tree/19.0/account_payment_mode)

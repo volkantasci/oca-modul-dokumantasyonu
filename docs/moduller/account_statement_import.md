@@ -52,6 +52,16 @@ Bankadan alınan ekstre dosyalarını Odoo'ya **banka ekstresi olarak içe aktar
 - **Türkiye pratiği:** Bankaların çoğu Excel/CSV verir → **`sheet_file_xlsx` ana kanal olacaktır**; CAMT, dosya üreten bankalar için hazırdır
 - İçe aktarma sonrası otomatik uzlaştırma istenirse aynı repodaki `account_statement_import_file_reconcile_oca` değerlendirilebilir
 
+## Gerekli Yetki Grupları
+
+| Grup (teknik ad) | Türkçe Adı | Neden Gerekli |
+|---|---|---|
+| `account.group_account_readonly` | Muhasebe Özelliklerini Göster - Salt Okunur | Banka Ekstreleri menüsü ve içe aktarma sihirbazı |
+| `account.group_account_manager` | Yönetici | Ekstre kolon eşleme şablonları (Yapılandırma → Muhasebe) |
+
+!!! tip "Grup atama"
+    Gruplar **Ayarlar → Kullanıcılar → (kullanıcı) → Yetkiler** bölümünden atanır. Muhasebe grubu hiyerarşisi için [Ana Sayfa → Yetki Grupları Hızlı Referans](../index.md#yetki-gruplari-hizli-referans) bölümüne bakın.
+
 ## Kaynaklar
 
 - [GitHub — account_statement_import_camt (19.0)](https://github.com/OCA/bank-statement-import/tree/19.0/account_statement_import_camt)

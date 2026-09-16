@@ -44,6 +44,16 @@ Fatura, iade, irsaliye gibi muhasebe belgelerine **şablondan otomatik not/yorum
 - Basit, bağımlılığı düşük bir raporlama iyileştirmesidir
 - Aynı depodaki `account_invoice_line_report`, `account_invoice_report_grouped_by_picking` gibi modüller opsiyonel olarak eklenebilir
 
+## Gerekli Yetki Grupları
+
+| Grup (teknik ad) | Türkçe Adı | Neden Gerekli |
+|---|---|---|
+| `account.group_account_manager` | Yönetici | Belge Yorumları şablon yönetimi (Faturalama → Yapılandırma → Muhasebe) |
+| `account.group_account_invoice` | Faturalama | Faturalarda not şablonu seçimi ve kullanımı |
+
+!!! tip "Grup atama"
+    Gruplar **Ayarlar → Kullanıcılar → (kullanıcı) → Yetkiler** bölümünden atanır. Muhasebe grubu hiyerarşisi için [Ana Sayfa → Yetki Grupları Hızlı Referans](../index.md#yetki-gruplari-hizli-referans) bölümüne bakın.
+
 ## Kaynaklar
 
 - [GitHub — account_comment_template (19.0)](https://github.com/OCA/account-invoice-reporting/tree/19.0/account_comment_template)

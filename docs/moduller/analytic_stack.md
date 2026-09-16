@@ -56,6 +56,17 @@ Analitik (maliyet merkezi) dağıtımını tüm süreçlerde **tutarlı ve zorun
 - `stock_analytic` için çekirdek `analytic` ve `stock_account` modülleri gerekir
 - Üç modül birlikte kurulmalıdır; tek başına politikalar anlamlı çalışmaz
 
+## Gerekli Yetki Grupları
+
+| Grup (teknik ad) | Türkçe Adı | Neden Gerekli |
+|---|---|---|
+| `analytic.group_analytic_accounting` | Analitik Muhasebe | Üç modülün tamamı analitik dağıtım alanlarını bu grupla gösterir |
+| `account.group_account_user` | Bütün Muhasebe Hesaplarını Göster | Analitik zorunluluk politikası ve hesap planı düzenleme |
+| `account.group_account_invoice` / `account.group_account_readonly` | Faturalama / Salt Okunur | Fatura, fiş ve stok maliyet satırlarında dağıtım kullanımı |
+
+!!! tip "Grup atama"
+    Gruplar **Ayarlar → Kullanıcılar → (kullanıcı) → Yetkiler** bölümünden atanır. Muhasebe grubu hiyerarşisi için [Ana Sayfa → Yetki Grupları Hızlı Referans](../index.md#yetki-gruplari-hizli-referans) bölümüne bakın.
+
 ## Kaynaklar
 
 - [GitHub — account_analytic_required (19.0)](https://github.com/OCA/account-analytic/tree/19.0/account_analytic_required)

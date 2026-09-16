@@ -53,6 +53,17 @@
 - Rapor tasarımı iş birimiyle birlikte yapılmalı; hesap kodları ve analitik boyutlar planlanmalıdır
 - Analitik raporlama için id 55 (analitik kuralları) ile birlikte en güçlü etkiyi verir
 
+## Gerekli Yetki Grupları
+
+| Grup (teknik ad) | Türkçe Adı | Neden Gerekli |
+|---|---|---|
+| `account.group_account_readonly` | Muhasebe Özelliklerini Göster - Salt Okunur | MIS Reporting menüleri |
+| `mis_builder.group_read_annotation` | MIS Report: view annotations | Rapor hücre notlarını görme |
+| `mis_builder.group_edit_annotation` | MIS Report: add annotations | Hücre notu ekleme (görüntüleme grubunu kapsar) |
+
+!!! tip "Grup atama"
+    Gruplar **Ayarlar → Kullanıcılar → (kullanıcı) → Yetkiler** bölümünden atanır. Muhasebe grubu hiyerarşisi için [Ana Sayfa → Yetki Grupları Hızlı Referans](../index.md#yetki-gruplari-hizli-referans) bölümüne bakın.
+
 ## Kaynaklar
 
 - [GitHub — mis_builder (19.0)](https://github.com/OCA/mis-builder/tree/19.0/mis_builder)

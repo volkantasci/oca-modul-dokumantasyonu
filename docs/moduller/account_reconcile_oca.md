@@ -49,6 +49,17 @@ Odoo **Community'de bulunmayan** gelişmiş **uzlaştırma (reconciliation) ekra
 - **Beta** olgunlukta ve arayüz ağırlıklı bir modüldür; canlı kullanım öncesi test instance'ında ekstre uzlaştırma akışı denenmelidir
 - Banka ekstresi içe aktarma (13) ile birlikte tam akış oluşturur: **içe aktar → uzlaştır → mutabakat**
 
+## Gerekli Yetki Grupları
+
+| Grup (teknik ad) | Türkçe Adı | Neden Gerekli |
+|---|---|---|
+| `account.group_account_readonly` | Muhasebe Özelliklerini Göster - Salt Okunur | Uzlaştırma menüleri ve ekranları (kaynakta doğrulandı) |
+| `account.group_account_user` | Bütün Muhasebe Hesaplarını Göster | Uzlaştırma işlemi için önerilir ("Full Accounting capabilities") |
+| `analytic.group_analytic_accounting` | Analitik Muhasebe | Analitik dağıtım alanları görünürse |
+
+!!! tip "Grup atama"
+    Gruplar **Ayarlar → Kullanıcılar → (kullanıcı) → Yetkiler** bölümünden atanır. Muhasebe grubu hiyerarşisi için [Ana Sayfa → Yetki Grupları Hızlı Referans](../index.md#yetki-gruplari-hizli-referans) bölümüne bakın.
+
 ## Kaynaklar
 
 - [GitHub — account_reconcile_oca (19.0)](https://github.com/OCA/account-reconcile/tree/19.0/account_reconcile_oca)

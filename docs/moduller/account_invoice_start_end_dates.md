@@ -45,6 +45,17 @@ Fatura/günlük fiş **satırlarına başlangıç ve bitiş tarihi** alanları e
 - Sektörde vergi/muhasebe açısından **gelir tahakkuku** çalışmalarında muhasebe birimiyle ortak kural belirlenmesi önerilir
 - Modül **OCA/account-closing** deposundadır (kart başlığındaki repo bilgisi buna göre güncellendi)
 
+## Gerekli Yetki Grupları
+
+| Grup (teknik ad) | Türkçe Adı | Neden Gerekli |
+|---|---|---|
+| — | — | Modül özel bir grup tanımlamaz; alanlar mevcut ekranlara eklenir |
+| `account.group_account_invoice` | Faturalama | Fatura satırlarında başlangıç/bitiş tarihi girişi |
+| `account.group_account_readonly` | Muhasebe Özelliklerini Göster - Salt Okunur | Fiş ve muhasebe satırlarında alanların görünümü |
+
+!!! tip "Grup atama"
+    Gruplar **Ayarlar → Kullanıcılar → (kullanıcı) → Yetkiler** bölümünden atanır. Muhasebe grubu hiyerarşisi için [Ana Sayfa → Yetki Grupları Hızlı Referans](../index.md#yetki-gruplari-hizli-referans) bölümüne bakın.
+
 ## Kaynaklar
 
 - [GitHub — account_invoice_start_end_dates (19.0)](https://github.com/OCA/account-closing/tree/19.0/account_invoice_start_end_dates)

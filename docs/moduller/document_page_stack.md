@@ -59,6 +59,24 @@ Community sürümde **Dokümanlar/KB (Knowledge)** uygulaması bulunmaz. Bu dör
 - **Opsiyonel genişletmeler:** `document_page_approval` (onay akışı), `document_page_access_group` (sayfa bazlı yetki grupları), `document_page_project` (proje bağlantısı), `document_page_procedure` (prosedür şablonları), `mgmtsystem_action/nonconformity` (aksiyon ve uygunsuzluk yönetimi)
 - Gelişmiş diff görünümü için container'a `html_diff` python paketi kurulabilir (kalıcılık notu: recreate'te silinir)
 
+## Gerekli Yetki Grupları
+
+| Grup (teknik ad) | Türkçe Adı | Neden Gerekli |
+|---|---|---|
+| `document_knowledge.group_document_user` | Document Knowledge user | Knowledge menüsü temel erişimi (`base.group_user`'ı kapsar) |
+| `document_knowledge.group_ir_attachment_user` | Central access to Documents | Tüm kayıtlara bağlı dokümanlara merkezî erişim |
+| `document_page.group_document_editor` | Editor | Wiki sayfası oluşturma/düzenleme |
+| `document_page.group_document_manager` | Manager | Sayfa/kategori yönetimi (Editor'ü kapsar) |
+| `mgmtsystem.group_mgmtsystem_viewer` | Viewer | Yönetim sistemi dokümanlarını görüntüleme |
+| `mgmtsystem.group_mgmtsystem_user` | User | Dokümanları kullanma |
+| `mgmtsystem.group_mgmtsystem_user_manager` | Approving User | Doküman onaylama |
+| `mgmtsystem.group_mgmtsystem_manager` | Manager | Yönetim sistemi yönetimi |
+| `mgmtsystem.group_mgmtsystem_auditor` | Auditor | Denetim erişimi |
+| `base.group_user` | Rol / Kullanıcı | İş talimatı şablonu görünümü |
+
+!!! tip "Grup atama"
+    Gruplar **Ayarlar → Kullanıcılar → (kullanıcı) → Yetkiler** bölümünden atanır. Muhasebe grubu hiyerarşisi için [Ana Sayfa → Yetki Grupları Hızlı Referans](../index.md#yetki-gruplari-hizli-referans) bölümüne bakın.
+
 ## Kaynaklar
 
 - [GitHub — document_page (19.0)](https://github.com/OCA/knowledge/tree/19.0/document_page)

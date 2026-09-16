@@ -57,6 +57,17 @@ Toplu ödeme sürecinin çekirdeğidir:
 - SEPA kullanılmayacaksa `sepa_credit_transfer` aktif edilmeden de `payment_order` kullanılabilir
 - **Mature** olgunlukta çekirdek modül; SEPA uygulaması Beta
 
+## Gerekli Yetki Grupları
+
+| Grup (teknik ad) | Türkçe Adı | Neden Gerekli |
+|---|---|---|
+| `account_payment_order.group_account_payment` | Accounting / Payments | Ödeme ve borç emri menüleri/işlemleri bu grupla kısıtlıdır; kurulumda admin'lere atanır |
+| `account.group_account_manager` | Yönetici | Ödeme modu ayarları (transfer tipi, batch) yapılandırması |
+| `base.group_multi_company` | Çoklu Şirket | Ödeme modu/şirket alanları |
+
+!!! tip "Grup atama"
+    Gruplar **Ayarlar → Kullanıcılar → (kullanıcı) → Yetkiler** bölümünden atanır. Muhasebe grubu hiyerarşisi için [Ana Sayfa → Yetki Grupları Hızlı Referans](../index.md#yetki-gruplari-hizli-referans) bölümüne bakın.
+
 ## Kaynaklar
 
 - [GitHub — account_payment_order (19.0)](https://github.com/OCA/bank-payment/tree/19.0/account_payment_order)

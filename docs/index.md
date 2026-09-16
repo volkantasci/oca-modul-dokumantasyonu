@@ -30,6 +30,24 @@ Odoo **Community** sürümü, Enterprise'da bulunan birçok finansal özelliği 
 
 OCA, bu boşlukları topluluk tarafından geliştirilen ve bakımı yapılan **AGPL-3 lisanslı** modüllerle doldurur. Modüllerin tamamı OCA'nın kalite süreçlerinden (review, test, CI) geçer.
 
+## Yetki Grupları Hızlı Referans
+
+| Grup (teknik ad) | Türkçe Adı | Kapsam |
+|---|---|---|
+| `account.group_account_readonly` | Muhasebe Özelliklerini Göster - Salt Okunur | Faturalama → **Muhasebe** bölümünü açar |
+| `account.group_account_invoice` | Faturalama | Fatura/ödeme süreçleri; Raporlama bölümünü de açar |
+| `account.group_account_basic` | Temel | Faturalama grubunu kapsar |
+| `account.group_account_user` | Bütün Muhasebe Hesaplarını Göster | Tam muhasebe; Temel + Salt Okunur'u kapsar |
+| `account.group_account_manager` | Yönetici | Yapılandırma, onay ve yönetim |
+| `analytic.group_analytic_accounting` | Analitik Muhasebe | Analitik dağıtım alanları |
+| `base.group_no_one` | Teknik Özellikleri | Teknik menüler (Ayarlar → Teknik) |
+| `base.group_multi_company` / `base.group_multi_currency` | Çoklu Şirket / Çoklu Para Birimi | Çok şirketli / çok para birimli alanlar |
+
+!!! warning "Önemli ayrıntı (sahada yaşandı)"
+    `group_account_manager` (Yönetici) Odoo 19'da `group_account_readonly`'yi **kapsamaz**; yalnızca `group_account_invoice`'ı kapsar. Bu nedenle "Faturalama → Muhasebe" bölümünü görebilmek için kullanıcıya ayrıca **Salt Okunur** ya da doğrudan **Bütün Muhasebe Hesaplarını Göster** grubu verilmelidir.
+
+Gruplar **Ayarlar → Kullanıcılar → (kullanıcı) → Yetkiler** bölümünden atanır. Modül bazında gerekli gruplar, her modül sayfasının **Gerekli Yetki Grupları** bölümünde listelenir.
+
 ## Kurulum Sırası (Özet)
 
 Modüller **bağımlılık zinciri + risk** gözetilerek 6 grupta kurulur:

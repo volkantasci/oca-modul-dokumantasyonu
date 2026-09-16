@@ -48,6 +48,16 @@ Müşteri ve tedarikçiler için **bankacılık talimatı (mandate)** kayıtlar�
 - SEPA direct debit kullanılacaksa `account_banking_sepa_direct_debit` modülü (aynı repo) ayrıca kurulur
 - **mandate** Production (kararlı); **mandate_sale** Beta
 
+## Gerekli Yetki Grupları
+
+| Grup (teknik ad) | Türkçe Adı | Neden Gerekli |
+|---|---|---|
+| `account_payment_order.group_account_payment` | Accounting / Payments | Mandat menüleri ve aksiyonları (kaynakta 6 referans) |
+| `account.group_account_readonly` | Muhasebe Özelliklerini Göster - Salt Okunur | Ortak/fatura ekranlarındaki mandat alanları |
+
+!!! tip "Grup atama"
+    Gruplar **Ayarlar → Kullanıcılar → (kullanıcı) → Yetkiler** bölümünden atanır. Muhasebe grubu hiyerarşisi için [Ana Sayfa → Yetki Grupları Hızlı Referans](../index.md#yetki-gruplari-hizli-referans) bölümüne bakın.
+
 ## Kaynaklar
 
 - [GitHub — account_banking_mandate (19.0)](https://github.com/OCA/bank-payment/tree/19.0/account_banking_mandate)

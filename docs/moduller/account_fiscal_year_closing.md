@@ -48,6 +48,17 @@ Mali yıl **dönem kapanışını sihirbazla adım adım** yürüten modüldür:
 - **Türkiye uygulaması:** Kapanış/devir fişleri muhasebe biriminin yetkisindedir; ilk kapanış mutlaka **test instance'ında muhasebe ile birlikte** denenmelidir
 - Sabit kıymet amortisman fişleri (bkz. `account_asset_management`) kapanıştan **önce** üretilmiş olmalıdır
 
+## Gerekli Yetki Grupları
+
+| Grup (teknik ad) | Türkçe Adı | Neden Gerekli |
+|---|---|---|
+| `account.group_account_readonly` | Muhasebe Özelliklerini Göster - Salt Okunur | Mali Yıl Kapanışları menüsü (Muhasebe bölümü) |
+| `account.group_account_manager` | Yönetici | Kapanış şablonları yapılandırması |
+| `account.group_account_user` | Bütün Muhasebe Hesaplarını Göster | Kapanış/aktarma fişlerinin oluşturulması için önerilir |
+
+!!! tip "Grup atama"
+    Gruplar **Ayarlar → Kullanıcılar → (kullanıcı) → Yetkiler** bölümünden atanır. Muhasebe grubu hiyerarşisi için [Ana Sayfa → Yetki Grupları Hızlı Referans](../index.md#yetki-gruplari-hizli-referans) bölümüne bakın.
+
 ## Kaynaklar
 
 - [GitHub — account_fiscal_year_closing (19.0)](https://github.com/OCA/account-closing/tree/19.0/account_fiscal_year_closing)

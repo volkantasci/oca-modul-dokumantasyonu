@@ -46,6 +46,18 @@ Bankadan **geri dönen (unpaid/return) ödemeleri** yönetir: karşılıksız ç
 - **Mature** olgunlukta; güvenle kullanılabilir
 - İade nedenleri listesi ihtiyaç halinde özelleştirilebilir (mail chatter entegrasyonu vardır)
 
+## Gerekli Yetki Grupları
+
+| Grup (teknik ad) | Türkçe Adı | Neden Gerekli |
+|---|---|---|
+| `account.group_account_invoice` | Faturalama | Müşteri Ödeme İadeleri menüleri (Faturalama → Müşteriler) |
+| `account.group_account_readonly` | Muhasebe Özelliklerini Göster - Salt Okunur | İade fişi detayı ve muhasebe erişimi |
+| `account_payment_order.group_account_payment` | Accounting / Payments | ISO 20022 iade dosyası içe aktarma (bank-payment altyapısı) |
+| `base.group_multi_company` | Çoklu Şirket | Çok şirketli görünüm |
+
+!!! tip "Grup atama"
+    Gruplar **Ayarlar → Kullanıcılar → (kullanıcı) → Yetkiler** bölümünden atanır. Muhasebe grubu hiyerarşisi için [Ana Sayfa → Yetki Grupları Hızlı Referans](../index.md#yetki-gruplari-hizli-referans) bölümüne bakın.
+
 ## Kaynaklar
 
 - [GitHub — account_payment_return (19.0)](https://github.com/OCA/account-payment/tree/19.0/account_payment_return)

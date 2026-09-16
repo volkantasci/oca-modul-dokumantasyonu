@@ -54,6 +54,19 @@ Müşteri ve tedarikçiler için **profesyonel hesap ekstresi (statement)** üre
 - Erişim için kullanıcıda Faturalama yetkisi (Invoicing veya Administrator) gerekir
 - **Beta** olgunlukta; canlı öncesi test instance'ında ekstre çıktıları kontrol edilmelidir
 
+## Gerekli Yetki Grupları
+
+| Grup (teknik ad) | Türkçe Adı | Neden Gerekli |
+|---|---|---|
+| `partner_statement.group_activity_statement` | Use activity statements | Etkinlik ekstresi aksiyonunun görünürlüğü |
+| `partner_statement.group_outstanding_statement` | Use outstanding statements | Açık bakiye ekstresi aksiyonunun görünürlüğü |
+| `account.group_account_invoice` veya `account.group_account_manager` | Faturalama / Yönetici | Raporu çalıştırmak için muhasebe yetkisi (upstream README) |
+
+Ekstre türleri ayrıca **Ayarlar → Faturalama → Partner Statements** bölümünden kullanıcı tabanında açılıp kapatılır.
+
+!!! tip "Grup atama"
+    Gruplar **Ayarlar → Kullanıcılar → (kullanıcı) → Yetkiler** bölümünden atanır. Muhasebe grubu hiyerarşisi için [Ana Sayfa → Yetki Grupları Hızlı Referans](../index.md#yetki-gruplari-hizli-referans) bölümüne bakın.
+
 ## Kaynaklar
 
 - [GitHub — partner_statement (19.0)](https://github.com/OCA/account-financial-report/tree/19.0/partner_statement)

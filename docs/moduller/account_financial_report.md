@@ -76,6 +76,17 @@ Aşağıdaki raporları **PDF ve XLSX** formatında üretir:
 !!! tip "Birlikte gelen modül: Tarih Aralıkları"
     Bu modülün bağımlılığı olan **`date_range`** ve otomatik kurulan **`date_range_account`** (raporlarda hazır dönem tanımları) için bkz. [Tarih Aralıkları (date_range)](date_range.md). Yaşlandırma aralıkları bu yapıdan bağımsızdır; raporlardaki *Tarih Aralığı* seçimi bu modülden gelir.
 
+## Gerekli Yetki Grupları
+
+| Grup (teknik ad) | Türkçe Adı | Neden Gerekli |
+|---|---|---|
+| `account.group_account_readonly` | Muhasebe Özelliklerini Göster - Salt Okunur | Faturalama → Raporlama menüsü ve rapor ekranlarının görünürlüğü |
+| `account.group_account_invoice` | Faturalama | Alternatif erişim; Raporlama bölümünü ve raporları açar |
+| `account.group_account_user` | Bütün Muhasebe Hesaplarını Göster | Yaşlandırma yapılandırması gibi ileri ayarlar ve eksiksiz erişim |
+
+!!! tip "Grup atama"
+    Gruplar **Ayarlar → Kullanıcılar → (kullanıcı) → Yetkiler** bölümünden atanır. Muhasebe grubu hiyerarşisi için [Ana Sayfa → Yetki Grupları Hızlı Referans](../index.md#yetki-gruplari-hizli-referans) bölümüne bakın.
+
 ## Kaynaklar
 
 - [GitHub — account_financial_report (19.0)](https://github.com/OCA/account-financial-report/tree/19.0/account_financial_report)
