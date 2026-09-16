@@ -16,7 +16,7 @@ Odoo 19 Community altyapımızda muhasebe, banka/ödeme, analitik-bütçe, fatur
 | GitHub Kuruluşu | [OCA](https://github.com/OCA) |
 
 !!! note "Menü adları: Community'de \"Muhasebe\" uygulaması yok"
-    Odoo **Community**'de ayrı bir *Muhasebe* uygulaması bulunmaz (Enterprise'daki `account_accountant` modülüne özeldir); muhasebe menüleri **Faturalama** uygulaması altında toplanır. Modül sayfalarında upstream README'den gelen *"Muhasebe → Raporlama"* gibi ifadeler, bu instance'ta **"Faturalama → Raporlama"** yoluna karşılık gelir. İleri muhasebe menüleri için kullanıcıda *Tam Muhasebe Özellikleri* grubu gerekebilir. Her modül aktive edildikçe gerçek menü yolu sahada doğrulanıp ilgili sayfada netleştirilir.
+    Odoo **Community**'de ayrı bir *Muhasebe* uygulaması bulunmaz (Enterprise'daki `account_accountant` modülüne özeldir); muhasebe menüleri **Faturalama** uygulaması altındaki **Muhasebe** bölümünde toplanır (ör. *Faturalama → Muhasebe → Ödemeler ve Vade listesi*). Bu bölümü görmek için kullanıcıda **"Muhasebe Özelliklerini Göster - Salt Okunur"** grubu gerekir; **"Bütün Muhasebe Hesaplarını Göster"** grubu bunu ve ileri menüleri kapsar. Upstream README kaynaklı *"Muhasebe → Raporlama"* gibi ifadeler bu instance'ta *"Faturalama → Raporlama"* yoluna karşılık gelir. Her modül aktive edildikçe gerçek menü yolu sahada doğrulanıp ilgili sayfada netleştirilir.
 
 ## Neden OCA Modülleri?
 

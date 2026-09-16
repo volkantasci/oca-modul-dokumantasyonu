@@ -1,7 +1,7 @@
 # Vade Listesi (`account_due_list`)
 
 !!! info "Kart Bilgisi"
-    **Kurulum Sırası:** 3/24 · **Proje Kartı:** id 46 · **Test Durumu:** ✅ PASS
+    **Kurulum Sırası:** 3/24 · **Proje Kartı:** id 46 · **Test Durumu:** ✅ PASS · **Aktivasyon:** ✅ 16.09.2026
 
 | Alan | Değer |
 |---|---|
@@ -26,13 +26,23 @@ Vadesi gelen ve gelecek **açık alacak/borç kalemlerini tek listede** göstere
 
 ## Odoo'da Neleri Değiştirir?
 
-- **Faturalama → Muhasebe → Ödeme ve Vade Listesi** menüsü ekler
+- **Faturalama → Muhasebe → Ödemeler ve Vade listesi** menüsü ekler
 - Liste görünümünde: hareket kalemi, ortak, fatura no, vade tarihi, tutar, kalan tutar, para birimi sütunları
 - Vade tarihi, gecikme günü ve ödeme durumuna göre **hazır filtreler ve gruplamalar** ekler
 - Kalemden ilgili faturaya/muhasebe kaydına doğrudan geçiş sağlar
 
 !!! note "Yetki gereksinimi"
-    Vade listesini görebilmek için kullanıcıda **Teknik / Tam Muhasebe Özellikleri** grubu gerekir (Geliştirici modu → Ayarlar → Kullanıcılar ve Şirketler → Gruplar → "Teknik" arama → kullanıcıyı ekle).
+    Menü, Faturalama içindeki **Muhasebe** bölümü altındadır; bu bölüm **"Muhasebe Özelliklerini Göster - Salt Okunur"** (`account.group_account_readonly`) grubuna bağlıdır. Bu grup yoksa menü hiç görünmez. 16.09.2026'da kullanıcıya **"Bütün Muhasebe Hesaplarını Göster"** (`account.group_account_user`) grubu verilerek bölüm görünür yapıldı — bu grup `readonly`, `basic` ve `invoice` gruplarını da kapsar.
+
+## Saha Notları (Aktivasyon Sonrası)
+
+**Aktivasyon:** 16.09.2026'da canlıda aktive edildi.
+
+**Menü yolu:** **Faturalama → Muhasebe → Ödemeler ve Vade listesi**
+
+**Çeviri durumu:** Modülün `tr.po` dosyası kapsamlıdır (36 çeviri: menü, filtreler, sütun etiketleri → "Vade Tarihi", "Tam Uzlaştı", "Vadesi Geçmiş" vb.) ve dört view'ın tamamında tr_TR çevirisi yüklüdür. **Ek çeviri çalışması gerekmedi.**
+
+**Yetki notu (yaşanan sorun):** Kullanıcıda yalnızca *Muhasebe Yöneticisi* (`group_account_manager`) grubu varken "Muhasebe" bölümü görünmüyordu; çünkü bu grup Odoo 19'da `readonly` grubunu kapsamıyor. `group_account_user` verilerek çözüldü. Yeni muhasebe kullanıcılarında da bu grubun atanmasına dikkat edilmelidir.
 
 ## Nasıl Çalışır?
 

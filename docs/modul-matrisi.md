@@ -65,7 +65,8 @@ Kartlardaki modüllerin çalışması için ek olarak mount edilen OCA modüller
 |---|---|---|
 | 1 | account_financial_report (+ `date_range`, `date_range_account`) | ✅ Aktif — 15.09.2026 |
 | 2 | account_tax_balance | ✅ Aktif — 15.09.2026 (menü/ekran çevirileri eklendi) |
-| 3–24 | Diğer kartlar | ⏳ Sırada (modüller test edildi, UI aktivasyonu bekliyor) |
+| 3 | account_due_list | ✅ Aktif — 16.09.2026 (ek çeviri gerekmedi) |
+| 4–24 | Diğer kartlar | ⏳ Sırada (modüller test edildi, UI aktivasyonu bekliyor) |
 
 ## Modül Sayfaları
 
